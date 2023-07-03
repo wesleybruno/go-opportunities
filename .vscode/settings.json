@@ -1,0 +1,9 @@
+{
+    "go.inlayHints.rangeVariableTypes": true,
+    "go.inlayHints.functionTypeParameters": true,
+    "go.inlayHints.parameterNames": true,
+    "go.inlayHints.constantValues": true,
+    "go.inlayHints.compositeLiteralTypes": true,
+    "go.inlayHints.compositeLiteralFields": true,
+    "go.inlayHints.assignVariableTypes": true
+}
