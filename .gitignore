@@ -1,0 +1,11 @@
+*.exe
+*.dll
+*.so
+*.dylab
+
+*.test
+
+*.out
+
+
+/db
