@@ -7,6 +7,15 @@ GET http://localhost:3000/api/v1/opennings
 ###
 POST http://localhost:3000/api/v1/openning
 
+{
+    "role": "role",
+    "company": "company",
+    "location" : "location",
+    "remote" : true,
+    "link" : "link",
+    "salary" : 10
+}
+
 ###
 PUT http://localhost:3000/api/v1/openning
 
