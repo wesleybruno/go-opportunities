@@ -10,6 +10,10 @@ func isEmpty(value string) bool {
 	return value == ""
 }
 
+func isNotEmpty(value string) bool {
+	return value != ""
+}
+
 func exists(value any) bool {
 	return value == nil
 }
@@ -49,4 +53,21 @@ func (r *CreateOpenningRequest) validate() error {
 	}
 
 	return nil
+}
+
+type UpdateOpenningRequest struct {
+	Role     string `json:"role"`
+	Company  string `json:"company"`
+	Location string `json:"location"`
+	Remote   *bool  `json:"remote"`
+	Link     string `json:"link"`
+	Salary   int64  `json:"salary"`
+}
+
+func (r *UpdateOpenningRequest) validate() error {
+	if isNotEmpty(r.Role) || isNotEmpty(r.Company) || isNotEmpty(r.Location) || isNotEmpty(r.Link) || exists(r.Remote) || r.Salary > 0 {
+		return nil
+	}
+
+	return fmt.Errorf("at least one field must be provided")
 }
