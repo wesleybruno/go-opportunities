@@ -1,4 +1,4 @@
-# Go Oportunities
+# Go Opportunities
 
 Este é um projeto em Go que implementa um CRUD (Create, Read, Update, Delete) de Oppenings. O objetivo deste projeto é fornecer uma aplicação básica para gerenciar oportunidades (Oppenings) de alguma entidade, como vagas de emprego, projetos, eventos, etc.
 
