@@ -1,8 +1,8 @@
 ###
-GET http://localhost:3000/api/v1/openning
+GET http://localhost:3000/api/v1/opennings
 
 ###
-GET http://localhost:3000/api/v1/opennings
+GET http://localhost:3000/api/v1/openning/?id=2
 
 ###
 POST http://localhost:3000/api/v1/openning
@@ -17,7 +17,16 @@ POST http://localhost:3000/api/v1/openning
 }
 
 ###
-PUT http://localhost:3000/api/v1/openning
+PUT http://localhost:3000/api/v1/openning/?id=2
+
+{
+    "role": "role-udpate",
+    "company": "company-udpate",
+    "location" : "location-udpate",
+    "remote" : false,
+    "link" : "link-udpate",
+    "salary" : 101
+}
 
 ###
-DELETE http://localhost:3000/api/v1/openning
+DELETE http://localhost:3000/api/v1/openning/?id=1
