@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/LagLabs/backend-go.git/schemas"
 	"github.com/gin-gonic/gin"
 )
 
@@ -21,4 +22,31 @@ func sendSuccess(ctx *gin.Context, op string, data interface{}) {
 		"message": fmt.Sprintf("Operation success: %v ", op),
 		"data":    data,
 	})
+}
+
+type ErrorResponse struct {
+	Message   string `json:"message"`
+	ErrorCode string `json:"errorCode"`
+}
+
+type CreateOpeningResponse struct {
+	Message string                   `json:"message"`
+	Data    schemas.OppeningResponse `json:"data"`
+}
+
+type DeleteOpeningResponse struct {
+	Message string                   `json:"message"`
+	Data    schemas.OppeningResponse `json:"data"`
+}
+type ShowOppeningResponse struct {
+	Message string                   `json:"message"`
+	Data    schemas.OppeningResponse `json:"data"`
+}
+type ListOpeningsResponse struct {
+	Message string                     `json:"message"`
+	Data    []schemas.OppeningResponse `json:"data"`
+}
+type UpdateOppeningResponse struct {
+	Message string                   `json:"message"`
+	Data    schemas.OppeningResponse `json:"data"`
 }
