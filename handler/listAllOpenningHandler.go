@@ -26,6 +26,6 @@ func ListAllOpenningHandler(ctx *gin.Context) {
 		return
 	}
 
-	sendSuccess(ctx, "ListAllOpenningHandler", opennings)
+	sendSuccess(ctx, "ListAllOpenningHandler", http.StatusOK, opennings)
 
 }

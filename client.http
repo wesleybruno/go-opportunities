@@ -2,7 +2,7 @@
 GET http://localhost:3000/api/v1/opennings
 
 ###
-GET http://localhost:3000/api/v1/openning/?id=2
+GET http://localhost:3000/api/v1/openning/?id=3
 
 ###
 POST http://localhost:3000/api/v1/openning

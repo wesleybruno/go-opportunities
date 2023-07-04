@@ -2,7 +2,6 @@ package handler
 
 import (
 	"fmt"
-	"net/http"
 
 	"github.com/LagLabs/backend-go.git/schemas"
 	"github.com/gin-gonic/gin"
@@ -16,9 +15,9 @@ func sendError(ctx *gin.Context, code int, message string) {
 	})
 }
 
-func sendSuccess(ctx *gin.Context, op string, data interface{}) {
+func sendSuccess(ctx *gin.Context, op string, statusCode int, data interface{}) {
 	ctx.Header("Content-type", "application/json")
-	ctx.JSON(http.StatusOK, gin.H{
+	ctx.JSON(statusCode, gin.H{
 		"message": fmt.Sprintf("Operation success: %v ", op),
 		"data":    data,
 	})

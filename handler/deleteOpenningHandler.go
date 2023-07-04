@@ -38,6 +38,6 @@ func DeleteOpenningHandler(ctx *gin.Context) {
 		return
 	}
 
-	sendSuccess(ctx, "DeleteOpenningHandler", openning)
+	sendSuccess(ctx, "DeleteOpenningHandler", http.StatusOK, openning)
 
 }

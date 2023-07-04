@@ -79,5 +79,5 @@ func UpdateOpenningHandler(ctx *gin.Context) {
 		return
 	}
 
-	sendSuccess(ctx, "UpdateOpenningHandler", openning)
+	sendSuccess(ctx, "UpdateOpenningHandler", http.StatusOK, openning)
 }

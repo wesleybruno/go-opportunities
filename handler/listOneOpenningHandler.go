@@ -33,5 +33,5 @@ func ListOneOpenningHandler(ctx *gin.Context) {
 		return
 	}
 
-	sendSuccess(ctx, "ListOneOpenningHandler", openning)
+	sendSuccess(ctx, "ListOneOpenningHandler", http.StatusOK, openning)
 }
