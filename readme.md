@@ -9,3 +9,9 @@ go run NOME_ARQUIVO
 
 - Lint imports
 go mod tidy
+
+- Docs
+
+* Install make and run:
+
+    make docs
