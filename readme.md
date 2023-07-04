@@ -30,6 +30,13 @@ go run main.go
 ```
 A aplicação será executada e estará disponível no endereço http://localhost:3000.
 
+#### Documentação
+
+Após executar o projeto a documentação das rotas ficará disponível em: http://localhost:3000/documentation/index.html
+
+#### Banco de dados
+
+Este projeto utiliza do SqLite como banco de dados, portanto não necessita de nenhuma configuração específica para testa-lo.
 
 #### Contribuindo
 Se você quiser contribuir para este projeto, siga as etapas abaixo:
